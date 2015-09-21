@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h2>VexTab是什么?</h2>
+<p>VexTab是一种允许您轻松地创建、编辑和共享标准符号和吉他乐谱的语言。不像ASCII TAb那样设计为易读的语言，VexTab是一种易写的语言。</p>
+<h2>第一步 五线曲谱</h2>
+<p><strong>tabstave</strong> 关键字被用来创建一个新的五线谱</p>
+<h2>第二步 添加一些八度音符</h2>
+<p><strong>notes</strong>关键字能够用来添加八度音符，notes代表八度和字符串，添加一个相同的字符或八度，你可以使用格式fret-fret-fret/string (or note-note-note/octave)。</p>
+<p>notes可以分别自然地添加下列后缀<code>#, ##, @, @@, and n</code>高半音符号，升号，重升号，降半音，重降号</p>
+<h2>第三步 五线谱关键词</h2>
+<p><strong>tabstave</strong>关键字参数可以结合。</p>
+<pre><code>keyword
+values
+notation
+true/false
+tablature
+true/false
+clef
+treble, alto, tenor, bass, percussion
+key
+C, Am, F, Dm, Bb, Gm, Eb, Cm, Ab, Fm, Db, Bbm, Gb, Ebm, Cb, Abm, G, Em, D, Bm, A, F#m, E, C#m, B, G#m, F#, D#m, C#, A#m
+time
+C, C|, #/#
+tuning
+standard, dropd, eb, E/5,B/4,G/4,D/4,A/3,E/3
+</code></pre>
+
+<p>例如：</p>
+<ul>
+<li>tabstave notation=true 在五线曲谱上提供一个标准的五线谱符号</li>
+<li>tabstave notation=true tablature=false 仅仅提供音乐音符</li>
+<li>tabstave notation=true clef=alto 改变中音谱号</li>
+<li>tabstave notation=true clef=bass key=C# time=C| 将会创建两个五线谱(一个乐谱, 一个吉他贝斯谱), 低音谱号C的关键</li>
+</ul>
+<h2>第四步 添加休止符和小节线</h2>
+<p>你可以在乐谱中输入一个休止符通过输入##。吉他谱是自动放置的，但你可以指定一个位置通过插入一个数字在散列之中，例如，#4#。位置范围在0-9之间（由低到高）。
+小节线可以通过使用小节线代码来使小节线变得充满想象</p>
+<pre><code>=||  复纵线
+=|:  重复开始
+=:|  重复结束
+=::  两个重复 
+=|= 结束节拍
+</code></pre>
+
+<h2>第五步 使一些音连音</h2>
+<p>通过一个b字符划分两品，各品之间的不同决定了如何来连音，例如10b12是一个专门的连音
+  如果你用3品来进行一个连音，第一品和最后一品相同一次连续和释放得以呈现。例如10b12b10</p>
+<h2>第六步 减弱音的声音，添加颤音</h2>
+<p>你可以通过用X替换音符来使音符削弱
+  在音符的最后添加一个v来表示一个颤音。大写的V表示一个刺耳的颤音。你还可以添加一个弯曲的颤音。
+  您还可以添加一个u或d分别表示音是向上还是向下的。</p>
+<h2>第七步 添加一些和弦</h2>
+<p>为了演奏和弦，将音符分组在圆括号中或分开每一品/弦之间在一段时间内系。
+对于谱子，你可以连音，滑音等。和弦中的音符和你用到的个别音符是一样的。</p>
+<h2>第八步 添加一些打弦、轻拍和滑音</h2>
+<p>演奏打弦轻拍滑音，分别使用字符<strong>h</strong>、<strong>t</strong> 和 <strong>s</strong>。
+  例如：演奏一个从6品到8品再回到6品的打弦，使用 <code>6h8p6</code>。
+  你也可以在和弦中使用打弦轻拍，滑音等；</p>
+<h2>第九步 添加时间和音长</h2>
+<p>默认的，音符音长为四分音符，若要改变音符的音长可以使用冒号放在一个时间代码的后面
+ 例如，W 指定一个完整的音符，目前使用的音长有: <code>w h q 8 16 32</code>，对应完整，半分，4分，8分，16分，32分音长。后缀的a 'd'在音符后面表明是一个点缀。如<code>：:qd</code>.
+  你可以表示音长通过包含一个音长数字(3, 5, 7, etc.)和符号标志^,就可以从前面的代码中生成相应音长的音符。例如: <code>8 4-5-6/4 ^3^</code> 将创建一些3分音长音符
+  这里另一个例子呈现的是音长和标准符号，告诉你可以通过加前缀:duration:在滑音中间，连奏和其他关系中设定音长。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

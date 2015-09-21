@@ -1,0 +1,24 @@
+{
+  "name": "Guitar",
+  "version": "0.0.0",
+  "authors": [
+    "manageryzy <manageryzy@live.cn>"
+  ],
+  "description": "齐鲁软件比赛的坑",
+  "license": "BSD",
+  "homepage": "http://www.261day.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "vexflow": "~1.2.27"
+  }
+}

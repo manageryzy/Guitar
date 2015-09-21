@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GUITAR</title>
+
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/vextab/releases/vextab.css" />
+    
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/vexflow/releases/vexflow-debug.js"></script>
+    <script type="text/javascript" src="../node_modules/vextab/releases/vextab-div.js"></script>
+    
+    <!-- build:remove -->
+    <link rel="stylesheet" type="text/css" href="./css/main.scss" />
+	<script type="text/javascript" src="./js/guitar.js"></script>
+    <!-- /build -->
+    
+	<link rel="stylesheet" type="text/css" href="./css/application.css" />
+	<script type="text/javascript" src="./js/application.js"></script>
+</head>
+<body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">GUITAR ! ! !</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container theme-showcase" role="main">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <!-- 歌曲选择 -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        选择默认歌曲 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="loadNote('1.txt')">练习曲1</a></li>
+                        <li><a href="#" onclick="loadNote('2.txt')">练习曲2</a></li>
+                        <li><a href="#" onclick="loadNote('3.txt')">练习曲3</a></li>
+                        <li><a href="#" onclick="loadNote('4.txt')">练习曲4</a></li>
+                        <li role="separator" class="divider"></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-default" onclick="editNote()">
+                    自定义歌曲 <i class="fa fa-pencil"></i>
+                </button>
+                <a href="#" class="btn btn-lg "  data-toggle="modal"  data-target="#basicModal">
+                    <button type="button" class="btn btn-default" onclick="editNote()">
+                        歌曲编辑帮助 <i class="fa fa-question-circle"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="panel panel-default" id="res-panel" style="display:none">
+            <div class="panel-body">
+                <div id="vex-edit" style="display:none">
+                    <div class="vex-tabdiv" width=1100 scale=1.0 editor="true">tabstave notation=true</div>                      
+                </div>
+                <canvas id="vex-canvas" style="display:none"></canvas>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title" id="myModalLabel">VexTab</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src="./help.html" style="border:0px;height:100%;width:100%;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <footer>
+        <!-- None Footer XDD -->
+    </footer>
+</body>
+</html>
